@@ -1,0 +1,6 @@
+<!--pages/music/music.wxml-->
+  <text class="title">My TodoList</text>
+<text class="text" bindtap="onMyEvent">hqj</text>
+<text class="text">wxm</text>
+
+

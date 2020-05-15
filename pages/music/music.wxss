@@ -1,0 +1,21 @@
+/* pages/music/music.wxss */
+
+.title{
+  font-size: 2rem;
+  margin-bottom: 70rpx;
+  margin-top: -170rpx;
+  text-align: center;
+
+}
+.text{
+  display: flex;
+  justify-content: space-between;
+  margin: 30rpx 0;
+  padding: 100 500rpx;
+  font-size: 26rpx;
+  color: rgb(230, 33, 33);
+  color: #888;
+  font-size: 2rem;
+  text-align: center;
+
+}

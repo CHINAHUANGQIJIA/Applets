@@ -1,0 +1,32 @@
+<view class="container">
+  <text class="title">My TodoList</text>
+    <view class="header" >
+    <image class="plus" src="../../assets/plus.png" bindtap='addTodoHandle'/>
+    <input class="new-todo" value="{{ input }}" placeholder="请输入你需要添加的内容" auto-focus bindinput="inputChangeHandle" bindconfirm="addTodoHandle"/>
+  </view>
+  <!-- 根据任务数判断展示哪段代码块 -->
+  <block wx:if="{{ todos.length }}">
+    <view class="todos">
+      <!--列表展示所有任务 -->
+      <view class="item{{ item.completed ? ' completed' : '' }}" wx:for="{{ todos }}" wx:key="{{ index }}" bindtap="toggleTodoHandle" data-index="{{ index }}">
+        <!-- 任务状态根据item项是否completed: success, todo: circle，根据状态定义icon type -->
+        <icon class="checkbox" type="{{ item.completed ? 'success' : 'circle' }}"/>
+        <text class="name">{{ item.name }}</text>
+        <icon class="remove" type="clear" size="16" catchtap="removeTodoHandle" data-index="{{ index }}"/>
+      </view>
+    </view>
+    <view class="footer">
+      <button class="btn" type="primary" bindtap="toggleAllHandle">全选</button>
+      <text wx:if="{{ leftCount }}">可选{{ leftCount }}     </text>
+      <button class="btn" type="primary" wx:if="{{ todos.length > leftCount }}" bindtap="clearCompletedHandle">删除</button>
+    </view>
+  </block>
+  <block wx:else>
+    <view class="empty">
+      <text class="title">没有内容请添加！</text>
+      <text class="content">欢迎光临</text>
+    </view>
+  </block>
+
+
+</view>

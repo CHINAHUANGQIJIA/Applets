@@ -1,0 +1,6 @@
+<!--components/myComponent.wxml-->
+
+<view class="inner">hello！我是自定义组件myComponent</view>
+<view class="inner">{{name}}</view>
+<view class="inner">{{age}}</view>
+<button bindtap='changeName'>点击我可向父组件传name</button>

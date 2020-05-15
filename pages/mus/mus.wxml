@@ -1,0 +1,7 @@
+<!--pages/mus/mus.wxml-->
+
+<view>
+<block wx:for="{{items}}">
+<text>{{items}}</text>
+</block> 
+</view>

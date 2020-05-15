@@ -1,0 +1,87 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  
+    </block>
+  </view>
+ 
+​​​​​​​​
+
+<view class='adduserorder'>
+ <button  class="circle" bindtap='bindEnter' data-item='music'>
+ <image mode='scaleToFill' src='/../../../image/home/1.png' plain='true' class='image'></image>
+ </button>
+ <button type="handleClicks" bindtap='bindEnter' data-item='btn' class="circle">
+ <image mode='aspectFill' src='/../../../image/home/2.png' plain='true' class='image'></image>
+ </button>
+ <button type="handleClicks" bindtap='bindEnter' data-item='todolist' class="circle">
+ <image mode='aspectFill' src='/../../../image/home/3.png' plain='true' class='image'></image>
+ </button>
+ <button type="handleClicks" bindtap='bindEnter' data-item='mus' class="circle" >
+ <image mode='aspectFill' src='/../../../image/home/4.png' plain='true' class='image'></image>
+ </button>
+ <button  catchtap="videoApp" mode="widthFix" class="circle">
+ <image mode='aspectFill' src='/../../../image/home/5.png' plain='true' class='image'></image>
+ </button>
+ 
+ 
+</view>
+<view class='textls'>
+<view class='viewclass'>
+    <text class='viewview'>启佳</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>List</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>Todo</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>Music</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>视频</text>
+</view>
+</view>
+
+<view class='adduserorder1'>
+ <button  class="circle" bindtap='bindEnter' data-item='music'>
+ <image mode='scaleToFill' src='/../../../image/home/1.png' plain='true' class='image'></image>
+ </button>
+ <button type="handleClicks" catchtap="handleClicks" class="circle">
+ <image mode='aspectFill' src='/../../../image/home/2.png' plain='true' class='image'></image>
+ </button>
+ <button type="handleClicks" catchtap="handleClicks" class="circle">
+ <image mode='aspectFill' src='/../../../image/home/3.png' plain='true' class='image'></image>
+ </button>
+ <button type="handleClicks" catchtap="handleClicks" class="circle" >
+ <image mode='aspectFill' src='/../../../image/home/4.png' plain='true' class='image'></image>
+ </button>
+ <button  catchtap="videoApp" mode="widthFix" class="circle">
+ <image mode='aspectFill' src='/../../../image/home/5.png' plain='true' class='image'></image>
+ </button>
+ 
+ 
+</view>
+<view class='textls'>
+<view class='viewclass'>
+    <text class='viewview'>启佳</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>List</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>酒店</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>景区</text>
+</view>
+<view class='viewclass'>
+    <text class='viewview'>视频</text>
+</view>
+</view>
+</view>

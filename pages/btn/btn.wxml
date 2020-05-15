@@ -1,0 +1,8 @@
+<!--pages/btn/btn.wxml-->
+      <button bindtap="showComponent">组件调用</button>
+      <myComponent name="{{name}}" age="{{age}}" bindchangeName="changeName"></myComponent>
+
+      <view>
+    <button bindtap="showComponent">自定义方法调用</button>
+    <myComponent id="myComponent"></myComponent>
+</view>

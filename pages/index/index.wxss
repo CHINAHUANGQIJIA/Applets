@@ -1,0 +1,85 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -200rpx;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+.swiper-item {
+  width: 100%;
+  padding: 10px;
+  display: block;
+  height: 150px;
+}
+
+
+
+swiper-item image {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.circle {
+  width: 40px; 
+  border-radius:1000px;
+  font-size: 0;
+  
+}
+
+.image {
+  top: 20rpx;
+  margin-left: -32rpx;
+  display: flex;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+.btn3 {
+  width: 30%;
+  margin-top: 20rpx;
+  background-color: rgba(57, 163, 233, 0.767);
+
+  border-radius: 40rpx;
+}
+
+.adduserorder {
+
+  display: flex;
+  flex-wrap: wrap;
+  width: 650rpx;
+}
+.adduserorder1 {
+margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 650rpx;
+}
+.viewclass {
+  width: 132rpx;
+  display: flex;
+  
+  flex-direction: row;
+  justify-content: center;
+}
+
+.textls {
+  display: flex;
+  flex-direction: row;
+}
